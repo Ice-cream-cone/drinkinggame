@@ -26,7 +26,7 @@ const Descriptions = () => {
 
 const fakeData = [
   { id: 1, task: 'drink a shot', description: 'drink a shot of vodka' },
-  { id: 2, task: 'drink beer', description: 'drink half a beer' },
+  { id: 2, task: 'drink beer', description: 'drink half a beer bottle' },
   { id: 3, task: 'lucky', description: 'Lucky you, no need to do anything' }
 ];
 
