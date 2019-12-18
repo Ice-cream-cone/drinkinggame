@@ -1,12 +1,16 @@
 import React from 'react';
+import styles from '../css/Descriptions.css';
 
 const Descriptions = props => {
   console.log('props', props);
+
   return (
     <div>
       {props.result ? (
         <>
-          <p id="result">Result: {fakeData[props.result].task}</p>
+          <p className={styles.resultText} id="result">
+            Result: {fakeData[props.result].task}
+          </p>
           <p id="description">
             Description: {fakeData[props.result].description}
           </p>
