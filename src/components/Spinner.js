@@ -75,6 +75,7 @@ class Spinner extends React.Component {
       obj1.setState({ color: obj1.getColor(initial) });
       obj.style.transition = "0s";
       obj.style.transform = `rotate(${initial}deg)`;
+
       this.btn.current.classList.toggle("disabled");
     }, 5000);
   }

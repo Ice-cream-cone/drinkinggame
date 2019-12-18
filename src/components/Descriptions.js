@@ -73,7 +73,7 @@ const fakeData = [
     {
       id: 12,
       task: "Lime",
-      description: "Pours some of their drink into the King's cup"
+      description: "Pours some of your drink into the King's cup"
     }
   ],
   [
