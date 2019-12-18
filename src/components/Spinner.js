@@ -17,40 +17,40 @@ class Spinner extends React.Component {
   getColor(deg) {
     if (deg >= 1 && deg <= 30) {
       // return 'yellow';
-      return 1;
+      return 0;
     } else if (deg >= 31 && deg <= 60) {
       // return 'orange';
-      return 2;
+      return 1;
     } else if (deg >= 61 && deg <= 90) {
       // return 'red';
-      return 3;
+      return 2;
     } else if (deg >= 91 && deg <= 120) {
       // return 'dark-pink';
-      return 4;
+      return 3;
     } else if (deg >= 121 && deg <= 150) {
       // return 'pink';
-      return 5;
+      return 4;
     } else if (deg >= 151 && deg <= 180) {
       // return 'purple';
-      return 6;
+      return 5;
     } else if (deg >= 181 && deg <= 210) {
       // return 'dark-purple';
-      return 7;
+      return 6;
     } else if (deg >= 211 && deg <= 240) {
       // return 'dark-blue';
-      return 8;
+      return 7;
     } else if (deg >= 241 && deg <= 270) {
       // return 'blue';
-      return 9;
+      return 8;
     } else if (deg >= 271 && deg <= 300) {
       // return 'cyan';
-      return 10;
+      return 9;
     } else if (deg >= 301 && deg <= 330) {
       // return 'green';
-      return 11;
+      return 10;
     } else if (deg >= 331 && deg <= 360) {
       // return 'lime';
-      return 12;
+      return 11;
     } else {
       // return 'you suck';
       return "you suck";
