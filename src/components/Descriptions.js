@@ -4,7 +4,15 @@ const Descriptions = props => {
   console.log('props', props);
   return (
     <div>
-      <h3 id="result">Result: {props.result}</h3>
+      {props.result ? (
+        <>
+          <p id="result">Result: {fakeData[props.result].task}</p>
+          <p id="description">
+            Description: {fakeData[props.result].description}
+          </p>
+        </>
+      ) : null}
+
       <table class="ui celled table unstackable">
         <thead>
           <tr>
