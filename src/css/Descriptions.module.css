@@ -2,3 +2,12 @@
   font-size: 19;
   color: blue;
 }
+
+.resultsctn {
+  margin-top: 15px;
+  height: 50px;
+  width: 100;
+  text-align: center;
+  padding: 10px 0;
+  line-height: 130%;
+}
