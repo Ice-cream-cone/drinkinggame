@@ -1,0 +1,24 @@
+.spin-ctn {
+  position: relative;
+}
+.wheel {
+  display: block;
+  width: 70%;
+  margin: 30px auto;
+}
+
+.pointer {
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  width: 15%;
+  transform: translate(-50%);
+  z-index: 999;
+}
+
+.spin-btn {
+  position: relative;
+  display: block !important;
+  margin: auto !important;
+  z-index: 999;
+}
