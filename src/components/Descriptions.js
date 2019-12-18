@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../css/Descriptions.css';
+import styles from '../css/Descriptions.module.css';
 
 const Descriptions = props => {
   console.log('props', props);
