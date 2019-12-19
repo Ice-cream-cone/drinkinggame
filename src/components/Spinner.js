@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import "./Spinner.css";
-import wheel from "../pics/spinner.png";
-import pointer from "../pics/pointer.png";
-import Descriptions from "./Descriptions";
+import './Spinner.css';
+import wheel from '../pics/spinner.png';
+import pointer from '../pics/pointer.png';
+import Descriptions from './Descriptions';
 
 class Spinner extends React.Component {
   constructor(props) {
@@ -11,7 +11,7 @@ class Spinner extends React.Component {
     this.wheel = React.createRef();
     this.btn = React.createRef();
     this.counter = 0;
-    this.state = { color: "" };
+    this.state = { color: '' };
   }
 
   getColor(deg) {
@@ -53,7 +53,7 @@ class Spinner extends React.Component {
       return 11;
     } else {
       // return 'you suck';
-      return "you suck";
+      return 'you suck';
     }
   }
 
@@ -61,25 +61,28 @@ class Spinner extends React.Component {
     const obj = this.wheel.current;
     const obj1 = this;
 
-    obj.style.transition = "5s cubic-bezier(0.27, 0.38, 0.03, 0.98)";
+    obj.style.transition = '5s cubic-bezier(0.27, 0.38, 0.03, 0.98)';
     const random = Math.random() * (1560 - 1200) + 1200;
     this.wheel.current.style.transform = `rotate(${random}deg)`;
 
-    this.btn.current.classList.toggle("disabled");
+    this.btn.current.classList.toggle('disabled');
 
     const initial = random % 360;
 
     setTimeout(() => {
       obj1.setState({ color: obj1.getColor(initial) });
-      obj.style.transition = "0s";
+      obj.style.transition = '0s';
       obj.style.transform = `rotate(${initial}deg)`;
-      this.btn.current.classList.toggle("disabled");
+      this.btn.current.classList.toggle('disabled');
     }, 5000);
   }
 
   render() {
     return (
-      <div>
+      <div id="outer-container">
+        <div id="title-box">
+          <h3 id="title-text">Drunken Wheel</h3>
+        </div>
         <div className="spin-ctn">
           <img className="pointer" src={pointer} alt="pointer" />
           <img className="wheel" ref={this.wheel} src={wheel} alt="wheel" />

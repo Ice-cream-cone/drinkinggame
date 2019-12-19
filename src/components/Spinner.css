@@ -22,3 +22,18 @@
   margin: auto !important;
   z-index: 999;
 }
+
+#outer-container {
+  background-color: bisque;
+}
+
+#title-box {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+#title-text {
+  font-size: 35px;
+  font-family: 'Raleway';
+}
