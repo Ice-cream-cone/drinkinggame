@@ -4,6 +4,7 @@ import "./Spinner.css";
 import wheel from "../pics/spinner.png";
 import pointer from "../pics/pointer.png";
 import Descriptions from "./Descriptions";
+import Button from "./Button";
 
 class Spinner extends React.Component {
   constructor(props) {
@@ -11,7 +12,11 @@ class Spinner extends React.Component {
     this.wheel = React.createRef();
     this.btn = React.createRef();
     this.counter = 0;
-    this.state = { color: "" };
+    this.state = { color: "", table: 0 };
+  }
+
+  setTable(n) {
+    this.setState({ table: n });
   }
 
   getColor(deg) {
@@ -51,9 +56,6 @@ class Spinner extends React.Component {
     } else if (deg >= 331 && deg <= 360) {
       // return 'lime';
       return 11;
-    } else {
-      // return 'you suck';
-      return "you suck";
     }
   }
 
@@ -73,6 +75,7 @@ class Spinner extends React.Component {
       obj1.setState({ color: obj1.getColor(initial) });
       obj.style.transition = "0s";
       obj.style.transform = `rotate(${initial}deg)`;
+
       this.btn.current.classList.toggle("disabled");
     }, 5000);
   }
@@ -80,6 +83,7 @@ class Spinner extends React.Component {
   render() {
     return (
       <div>
+        <Button setTable={n => this.setTable(n)} />
         <div className="spin-ctn">
           <img className="pointer" src={pointer} alt="pointer" />
           <img className="wheel" ref={this.wheel} src={wheel} alt="wheel" />
@@ -90,9 +94,8 @@ class Spinner extends React.Component {
           >
             Spin
           </button>
-          {this.state.color}
         </div>
-        <Descriptions result={this.state.color} />
+        <Descriptions table={this.state.table} result={this.state.color} />
       </div>
     );
   }
