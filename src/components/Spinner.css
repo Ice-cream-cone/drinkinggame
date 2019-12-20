@@ -1,5 +1,5 @@
 * {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-size: 14px;
   font-weight: bold;
 }
@@ -11,6 +11,7 @@
   display: block;
   width: 250px;
   margin: 30px auto;
+  /* filter: blur(1px); */
 }
 
 .pointer {
@@ -60,7 +61,7 @@ div a.navy {
 
 #title-text {
   font-size: 30px;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 #result {
