@@ -13,6 +13,7 @@ class Spinner extends React.Component {
     this.btn = React.createRef();
     this.counter = 0;
     this.state = { color: "", table: 0 };
+    this.times = 0;
   }
 
   setTable(n) {
@@ -60,6 +61,7 @@ class Spinner extends React.Component {
   }
 
   spin() {
+    this.times += 1;
     const obj = this.wheel.current;
     const obj1 = this;
 
@@ -90,13 +92,18 @@ class Spinner extends React.Component {
         <div className="spin-ctn">
           <img className="pointer" src={pointer} alt="pointer" />
           <img className="wheel" ref={this.wheel} src={wheel} alt="wheel" />
-          <button
-            className="ui button black spin-btn"
-            onClick={() => this.spin()}
-            ref={this.btn}
-          >
-            Spin
-          </button>
+          <div className="spin-btn">
+            <div className="ui labeled button" tabIndex="0">
+              <button
+                className="ui button instagram "
+                onClick={() => this.spin()}
+                ref={this.btn}
+              >
+                <i className="heart icon"></i>Spin
+              </button>
+              <a className="ui basic blue left pointing label">{this.times}</a>
+            </div>
+          </div>
         </div>
         <Descriptions table={this.state.table} result={this.state.color} />
       </div>
