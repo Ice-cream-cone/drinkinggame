@@ -58,7 +58,7 @@ const fakeData = [
       description:
         'Shotgun 1 can of beer, then take you are immune from drinking until it is your turn again'
     },
-    { id: 4, task: 'megenta', description: 'All girls drink 1' },
+    { id: 4, task: 'magenta', description: 'All girls drink 1' },
     { id: 5, task: 'pink', description: 'All guys drink 1' },
     { id: 6, task: 'purple', description: 'Last person to raise hand drink 1' },
     {
@@ -99,7 +99,7 @@ const fakeData = [
       task: 'red',
       description: 'Flip a coin, if head drink 1 shot, if tail you are safe'
     },
-    { id: 4, task: 'megenta', description: 'All girls drink 1 shot' },
+    { id: 4, task: 'magenta', description: 'All girls drink 1 shot' },
     { id: 5, task: 'Pink', description: 'All guys drink 1 shot' },
     {
       id: 6,
@@ -143,7 +143,7 @@ const fakeData = [
     },
     {
       id: 4,
-      task: 'megenta',
+      task: 'magenta',
       description: 'Person on your right drink 1 shot'
     },
     { id: 5, task: 'pink', description: 'Twerk for 15 seconds' },
