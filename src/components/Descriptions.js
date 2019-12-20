@@ -12,29 +12,30 @@ const Descriptions = props => {
             <div className={styles.resultText} id="result">
               {fakeData[props.table][props.result].task}
             </div>
-            <div id="description">
+            <div className={styles.resultDescriptionText} id="description">
               {fakeData[props.table][props.result].description}
             </div>
           </div>
         )}
       </div>
-
-      <table className="ui inverted celled table unstackable">
-        <thead>
-          <tr>
-            <th>Color</th>
-            <th>Task</th>
-          </tr>
-        </thead>
-        <tbody>
-          {fakeData[props.table].map(elem => (
-            <tr key={elem.id}>
-              <td data-label="Task">{elem.task}</td>
-              <td data-label="Description">{elem.description}</td>
+      <div className={styles.tableContainer}>
+        <table className="ui inverted celled table unstackable">
+          <thead>
+            <tr>
+              <th>Color</th>
+              <th>Task</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {fakeData[props.table].map(elem => (
+              <tr key={elem.id}>
+                <td data-label="Task">{elem.task}</td>
+                <td data-label="Description">{elem.description}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };
