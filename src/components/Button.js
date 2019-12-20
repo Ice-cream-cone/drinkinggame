@@ -1,19 +1,19 @@
-import React from 'react';
+import React from "react";
 
-import './Button.css';
+import "./Button.css";
 
 class Button extends React.Component {
   btnClick(e) {
-    if (e.classList.contains('positive') === false) {
-      e.classList.toggle('positive');
+    if (e.classList.contains("secondary") === false) {
+      e.classList.toggle("secondary");
 
-      this.props.setTable(Number(e.getAttribute('table')));
+      this.props.setTable(Number(e.getAttribute("table")));
 
-      const btn = document.querySelectorAll('.sb');
+      const btn = document.querySelectorAll(".sb");
 
       for (var i = 0; i < btn.length; i++) {
-        if (btn[i].id !== e.id && btn[i].classList.contains('positive')) {
-          btn[i].classList.toggle('positive');
+        if (btn[i].id !== e.id && btn[i].classList.contains("secondary")) {
+          btn[i].classList.toggle("secondary");
         }
       }
     }
@@ -25,7 +25,7 @@ class Button extends React.Component {
           <button
             id="b1"
             table="0"
-            className="ui positive button sb"
+            className="ui secondary button sb"
             onClick={e => this.btnClick(e.target)}
           >
             Beer
