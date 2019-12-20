@@ -5,7 +5,7 @@
   display: block;
   width: 250px;
   margin: 30px auto;
-  filter: blur(1px);
+  /* filter: blur(1px); */
 }
 
 .pointer {

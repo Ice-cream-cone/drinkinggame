@@ -37,7 +37,7 @@ class Button extends React.Component {
             className="ui button sb"
             onClick={e => this.btnClick(e.target)}
           >
-            Vodka
+            Hard Liquor
           </button>
           <div className="or"></div>
           <button
