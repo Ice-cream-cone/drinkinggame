@@ -8,4 +8,5 @@ Built using React, JavaScript, Semantics UI, HTML, and CSS
 ### Developed by
 
 [winjitn](https://github.com/winjitn)
+
 [charlie-ttt](https://github.com/charlie-ttt)
