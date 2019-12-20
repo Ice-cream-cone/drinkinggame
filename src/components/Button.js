@@ -4,16 +4,16 @@ import "./Button.css";
 
 class Button extends React.Component {
   btnClick(e) {
-    if (e.classList.contains("secondary") === false) {
-      e.classList.toggle("secondary");
+    if (e.classList.contains("primary") === false) {
+      e.classList.toggle("primary");
 
       this.props.setTable(Number(e.getAttribute("table")));
 
       const btn = document.querySelectorAll(".sb");
 
       for (var i = 0; i < btn.length; i++) {
-        if (btn[i].id !== e.id && btn[i].classList.contains("secondary")) {
-          btn[i].classList.toggle("secondary");
+        if (btn[i].id !== e.id && btn[i].classList.contains("primary")) {
+          btn[i].classList.toggle("primary");
         }
       }
     }
@@ -25,7 +25,7 @@ class Button extends React.Component {
           <button
             id="b1"
             table="0"
-            className="ui secondary button sb"
+            className="ui primary button sb"
             onClick={e => this.btnClick(e.target)}
           >
             Beer
