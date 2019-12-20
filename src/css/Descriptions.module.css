@@ -1,6 +1,7 @@
 .resultText {
   font-size: 19;
-  color: blue;
+  font-weight: bold;
+  color: black;
 }
 
 .resultsctn {
