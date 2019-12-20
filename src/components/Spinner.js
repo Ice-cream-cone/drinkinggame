@@ -54,7 +54,7 @@ class Spinner extends React.Component {
     } else if (deg >= 301 && deg <= 330) {
       // return 'green';
       return 10;
-    } else if (deg >= 331 && deg <= 360) {
+    } else {
       // return 'lime';
       return 11;
     }
