@@ -1,6 +1,16 @@
+.tableContainer {
+  margin-top: 5px;
+}
 .resultText {
   font-size: 19;
-  color: blue;
+  font-weight: bold;
+  color: black;
+  padding: 5px;
+}
+.resultDescriptionText {
+  font-size: 19;
+  color: black;
+  margin-bottom: 10px;
 }
 
 .resultsctn {
